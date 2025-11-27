@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Лабораторна №2</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Лабораторна робота №2</title>
+
+  <!-- Підключення стилів -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Google шрифти -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- ГОРИЗОНТАЛЬНА НАВІГАЦІЯ -->
-    <nav class="nav">
-        <a href="#">Головна</a>
-        <a href="#">Про нас</a>
-        <a href="#">Послуги</a>
-        <a href="#">Контакти</a>
-    </nav>
+<header class="header">
+  <h1>Навчальний проєкт</h1>
+  <nav class="nav">
+    <a href="#">Головна</a>
+    <a href="#">Про нас</a>
+    <a href="#">Послуги</a>
+    <a href="#">Контакти</a>
+  </nav>
+</header>
 
-    <!-- FLEXBOX макет -->
-    <div class="container">
-        <aside class="left-panel">
-            <h2>Ліва панель</h2>
-            <p>Текст для прикладу. Панель зроблена через Flexbox.</p>
-        </aside>
+<main class="container">
 
-        <main class="content">
-            <h1>Основи CSS</h1>
-            <p>Приклад форматування тексту. Тут можна писати будь-який контент.</p>
+  <aside class="left">
+    <h2>Ліва панель</h2>
+    <p>Текст для прикладу. Панель зроблена через Flexbox.</p>
+  </aside>
 
-            <h2>Зображення</h2>
-            <img src="img/sample.jpg" alt="Фото">
+  <section class="content">
+    <h2>Основи CSS</h2>
+    <p>Приклад форматування тексту. Тут можна писати будь-який контент.</p>
 
-            <h2>Grid приклад</h2>
-            <div class="grid-box">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-            </div>
-        </main>
+    <h2>Зображення</h2>
+    <img src="https://via.placeholder.com/400" alt="Фото">
 
-        <aside class="right-panel">
-            <h2>Права панель</h2>
-            <p>Наведи мишкою — буде hover-ефект.</p>
-        </aside>
+    <h2>Grid приклад</h2>
+    <div class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
     </div>
+  </section>
+
+  <aside class="right">
+    <h2>Права панель</h2>
+    <p>Наведи мишкою — буде hover-ефект.</p>
+  </aside>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 Каглюк Оксана, 211 група</p>
+</footer>
 
 </body>
 </html>
