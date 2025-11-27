@@ -1,58 +1,91 @@
-/* Частина 1 */
-
-/* використайте селектор елемента body */
-body {
-    margin: 25px;
-    padding: 0;
-    background: rgb(226, 223, 223, 0.5);
-    background-image: url("sky.jpg");
-    background-size: cover;
-}
-
-/* універсальний селектор */
+/* Загальні стилі */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* селектор елемента header */
-header {
+body {
+    background: #f2f2f2;
     padding: 20px;
-    background: linear-gradient(grey, white, grey);
 }
 
-/* селектор елемента для напису-слогана у заголовку сайту */
-h1 {
-    font-size: 2rem;
-    text-align: center;
-    text-shadow: grey 2px 2px;
+/* HEADER */
+.header {
+    background: linear-gradient(to bottom, #ffffff, #888);
+    padding: 20px;
     margin-bottom: 20px;
 }
 
-/* меню */
-ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1.2rem;
+.nav {
+    display: flex;
+    gap: 20px;
 }
 
-ul li a {
+.nav a {
     text-decoration: none;
     color: blue;
+    font-weight: bold;
 }
 
-ul li a:hover {
-    color: darkblue;
+.nav a:hover {
+    text-decoration: underline;
 }
 
-/* Зображення та текст */
-img {
-    width: 300px;
-    border-radius: 10px;
+/* FLEX Лейаут */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Панелі */
+.left, .center, .right {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Ширини колонок */
+.left {
+    width: 20%;
+}
+.center {
+    width: 60%;
+}
+.right {
+    width: 20%;
+}
+
+/* Фото */
+.photo {
+    width: 200px;
+    border-radius: 8px;
     margin: 10px 0;
 }
 
-p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin: 10px 0;
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.grid div {
+    background: #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Hover */
+.right:hover {
+    background: #e6ffe6;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    text-align: center;
 }
