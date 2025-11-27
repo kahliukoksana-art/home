@@ -1,0 +1,155 @@
+/* ========================
+   CSS ЗМІННІ (var + :root)
+======================== */
+
+:root {
+  --main-color: #3498db;
+  --accent-color: #2ecc71;
+  --text-color: #333;
+  --bg-light: #f4f4f4;
+  --font-main: 'Montserrat', sans-serif;
+  --radius: 1rem;
+}
+
+/* ========================
+   БАЗОВІ СТИЛІ
+======================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg-light);
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ========================
+   HEADER + FLEXBOX
+======================== */
+
+.header {
+  background: var(--main-color);
+  color: white;
+  padding: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+/* ========================
+   NAV + ПСЕВДОКЛАСИ
+======================== */
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+/* hover */
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+/* active */
+.nav a:active {
+  transform: scale(0.95);
+}
+
+/* псевдоелемент */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ========================
+   MAIN
+======================== */
+
+.main {
+  padding: 2rem;
+}
+
+.about {
+  margin-bottom: 3rem;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 50rem;
+}
+
+/* ========================
+   GALERY + GRID
+======================== */
+
+.gallery h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.5rem;
+}
+
+/* ========================
+   ЗОБРАЖЕННЯ (адаптивні)
+======================== */
+
+.grid img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--radius);
+  transition: 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ========================
+   FOOTER
+======================== */
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
