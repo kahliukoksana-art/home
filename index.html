@@ -2,51 +2,64 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Лабораторна робота №2</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CSS Основи</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-    <nav class="nav">
-        <a href="#">Головна</a>
-        <a href="#">Про нас</a>
-        <a href="#">Послуги</a>
-        <a href="#">Контакти</a>
-    </nav>
-</header>
+<!-- Меню -->
+<nav class="navbar">
+    <a href="#">Головна</a>
+    <a href="#">Про нас</a>
+    <a href="#">Послуги</a>
+    <a href="#">Контакти</a>
+</nav>
 
-<main class="container">
+<div class="container">
 
-    <section class="left">
+    <!-- Ліва панель -->
+    <div class="panel left">
         <h2>Ліва панель</h2>
-        <p>Текст для прикладу. Панель зроблена через Flexbox.</p>
-    </section>
+        <p>
+            Це ліва панель. Вона створена за допомогою flexbox.  
+            Тут можна розмістити будь-який текст або додаткові елементи.
+        </p>
+    </div>
 
-    <section class="center">
+    <!-- Центральний контент -->
+    <div class="center">
         <h2>Основи CSS</h2>
-        <p>Приклад форматування тексту. Тут можна писати будь-який контент.</p>
+        <p>
+            Приклад форматування тексту.  
+            CSS дозволяє красиво оформлювати сторінки — змінювати кольори, шрифти, відступи,
+            робити адаптивні блоки та ефекти.  
+            Нижче показано приклад вставки зображення та використання CSS Grid.
+        </p>
 
-        <h2>Зображення</h2>
+        <h3>Зображення</h3>
         <img src="photo.jpg" alt="Фото" class="photo">
 
-        <h2>Grid приклад</h2>
-        <div class="grid">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+        <h3>Grid приклад</h3>
+        <div class="grid-box">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
         </div>
-    </section>
+    </div>
 
-    <section class="right">
+    <!-- Права панель -->
+    <div class="panel right">
         <h2>Права панель</h2>
-        <p>Наведи мишкою — буде hover-ефект.</p>
-    </section>
+        <p>
+            Наведи мишкою — буде hover-ефект.  
+            Ця панель може містити додаткову інформацію, важливі повідомлення чи меню.
+        </p>
+    </div>
 
-</main>
+</div>
 
-<footer class="footer">
+<footer>
     © 2025 Каглюк Оксана, 211 група
 </footer>
 
