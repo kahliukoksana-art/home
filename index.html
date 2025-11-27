@@ -36,4 +36,107 @@
         .panel {
             width: 25%;
             background: #fff;
-            padding
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .left, .right {
+            min-height: 350px;
+        }
+
+        .right:hover {
+            background: #e6e6e6;
+            transition: 0.3s;
+        }
+
+        .center {
+            width: 45%;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .photo {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .grid-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .item {
+            background: #ddd;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 6px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="#">Головна</a>
+    <a href="#">Про нас</a>
+    <a href="#">Послуги</a>
+    <a href="#">Контакти</a>
+</nav>
+
+<div class="container">
+
+    <div class="panel left">
+        <h2>Ліва панель</h2>
+        <p>
+            Це ліва панель. Вона створена за допомогою Flexbox.
+            Тут можна розмістити будь-яку інформацію чи навігацію.
+        </p>
+    </div>
+
+    <div class="center">
+        <h2>Основи CSS</h2>
+        <p>
+            CSS дозволяє оформлювати веб-сторінки, робити їх красивими,
+            структурованими та приємними для користувача.
+            Нижче показано приклад зображення та сітки (Grid Layout).
+        </p>
+
+        <h3>Зображення</h3>
+
+        <img src="https://i.imgur.com/6QLZ9Iv.jpeg" alt="Фото" class="photo">
+
+        <h3>Grid приклад</h3>
+        <div class="grid-box">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </div>
+
+    <div class="panel right">
+        <h2>Права панель</h2>
+        <p>
+            Наведи мишкою — буде hover-ефект.
+            Тут можна виводити оголошення або додаткову інформацію.
+        </p>
+    </div>
+</div>
+
+<footer>
+    © 2025 Каглюк Оксана, 211 група
+</footer>
+
+</body>
+</html>
